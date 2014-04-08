@@ -1,0 +1,672 @@
+.jcrop-holder img,
+img.jcrop-preview {
+  max-width: none;
+}
+.icon-thumbs-down{color:#666 !important;}
+.ui-multiselect {
+    border: solid 1px;
+    font-size: 0.8em;
+    height: 450px;
+}
+
+.ui-multiselect ul {
+    -moz-user-select: none;
+}
+
+.ui-multiselect li {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    line-height: 20px;
+    height: 20px;
+    font-size: 11px;
+    list-style: none;
+}
+
+.ui-multiselect li a {
+    color: #999;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+.ui-multiselect li.ui-draggable-dragging {
+    padding-left: 10px;
+}
+
+.ui-multiselect div.selected {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: left;
+}
+
+.ui-multiselect ul.selected {
+    position: relative;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    background: #fff;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    position: relative;
+    width: 100%;
+}
+
+.ui-multiselect ul.selected li {
+}
+
+.ui-multiselect div.available {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: left;
+    border-left: 1px solid;
+}
+
+.ui-multiselect ul.available {
+    position: relative;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    background: #fff;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    width: 100%;
+}
+
+.ui-multiselect ul.available li {
+    padding-left: 10px;
+}
+
+.ui-multiselect .ui-state-default {
+    border: none;
+    margin-bottom: 1px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.ui-multiselect .ui-state-hover {
+    border: none;
+}
+
+.ui-multiselect .ui-widget-header {
+    border: none;
+    font-size: 11px;
+    margin-bottom: 1px;
+}
+
+.ui-multiselect .add-all {
+    float: right;
+    padding: 7px;
+}
+
+.ui-multiselect .remove-all {
+    float: right;
+    padding: 7px;
+}
+
+.ui-multiselect .search {
+    float: left;
+    padding: 4px;
+}
+
+.ui-multiselect .count {
+    float: left;
+    padding: 7px;
+}
+
+.ui-multiselect li span.ui-icon-arrowthick-2-n-s {
+    position: absolute;
+    left: 2px;
+}
+
+.ui-multiselect li a.action {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.ui-multiselect input.search {
+    height: 14px;
+    padding: 1px;
+    opacity: 0.5;
+    margin: 4px;
+    width: 100px;
+}
+
+.multiselect {
+    width: 660px;
+    height: 400px;
+}
+/*start templates/actionVs/tournament_match_comment.tpl*/
+#match-com {
+    padding: 10px 0;
+}
+
+#match-com h2 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #C4C4C4;
+    padding-bottom: 5px;
+}
+
+/*Номер матча и дата*/
+#match-com .num-date {
+    font-size: 10px;
+    position: relative;
+    top: -8px;
+}
+
+/*Счет и название коммант и лого*/
+#match-com .name-logo-command {
+    background: #FDFDFD;
+    padding: 4px 5px;
+    border-radius: 15px;
+    height: 55px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+#match-com .name-logo-command .commands {
+    overflow: hidden;
+}
+#match-com .name-logo-command .commands li {}
+#match-com .name-logo-command .commands li.away {
+    float: left;
+}
+#match-com .name-logo-command .commands li.away .logo {}
+#match-com .name-logo-command .commands li.away .name {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    position: relative;
+    /*top: -17px;*/
+    margin: 0 10px;
+    color: #069;
+}
+#match-com .name-logo-command .commands li.home {
+    float: right;
+}
+#match-com .name-logo-command .commands li.home .logo {}
+#match-com .name-logo-command .commands li.home .name {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    position: relative;
+    /*top: -17px;*/
+    margin: 0 10px;
+    color: #903;
+}
+
+#match-com .name-logo-command .count-math {
+    display: inline-block;
+    padding: 5px 2px 5px;
+    height: 30px;
+    line-height: 18px;
+    position: relative;
+    top: -50px;
+
+
+}
+#match-com .name-logo-command .count-math .count {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    font-size: 28px;
+    line-height: 32px;
+    min-width: 34px;
+    margin: 0 3px;
+    border-radius: 3px;
+    display: inline-block;
+
+    background: #515151; /* Old browsers */
+    background: -moz-linear-gradient(top,  #515151 0%, #2c2c2c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515151), color-stop(100%,#2c2c2c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #515151 0%,#2c2c2c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #515151 0%,#2c2c2c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #515151 0%,#2c2c2c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #515151 0%,#2c2c2c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
+
+}
+#match-com .name-logo-command .count-math .info {
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+/*Ледовое поле*/
+#match-com .icefield {
+    margin-bottom: 20px;
+}
+
+/*Листинг игры*/
+#match-com .goal-listing {
+    margin-bottom: 20px;
+    width: 70%;
+    float: left;
+}
+
+#match-com .goal-listing table {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+#match-com .goal-listing table td {
+    padding: 3px 4px!important;
+}
+
+#match-com .goal-listing table tr.period {
+    text-align: left;
+    background: transparent;
+    color: #686868;
+}
+#match-com .goal-listing table tr.period h3 {
+    padding: 7px 0 0;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#match-com .goal-listing table tr.head td {
+    background: #686868;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#match-com .goal-listing table tbody {
+    text-align: left;
+    vertical-align: top;
+}
+
+#match-com .goal-listing table tbody td.goals {
+    color: #75A13F;
+    font-weight: bold;
+}
+#match-com .goal-listing table tbody td.onegoal {
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+#match-com .goal-listing table tbody td.goaltime {
+    font-size: 10px;
+    padding-left: 13px;
+}
+
+#match-com .goal-listing table tbody td a.stream-author {
+    color: #686868;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#match-com .goal-listing table tbody td .nick {
+    color: #AAA;
+    font-size: 8px;
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+}
+
+#match-com .onlyname{
+    color: #686868;
+    font-weight: bold;
+    padding-left: 13px;
+    text-decoration: none;
+}
+
+/*Звезды матча*/
+#match-com .stars-match {
+    float: right;
+    width: 27%;
+    margin-bottom: 20px;
+}
+#match-com .stars-match h3 {
+    padding: 7px 0 0;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#match-com .stars-match ul {
+    background: #FDFDFD;
+    margin: 6px 0 0;
+    padding: 8px 7px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+#match-com .stars-match ul li {
+    position: relative;
+    padding-left: 40%;
+    margin-bottom: 15px;
+}
+#match-com .stars-match ul li:last-child {
+    margin: 0;
+}
+#match-com .stars-match ul li .ava {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    display: inline-block;
+}
+#match-com .stars-match ul li .ava img {
+    width: 100%;
+    border-radius: 5px;
+}
+#match-com .stars-match ul li .logo {
+    width: 85%;
+    padding-left: 7px;
+    display: inline-block;
+}
+#match-com .stars-match ul li .logo img {
+    width: 100%;
+}
+#match-com .stars-match ul li .gonschik {
+    width: 85%;
+    padding-left: 7px;
+    display: inline-block;
+}
+#match-com .stars-match ul li .gonschik .star-author {
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#match-com .stars-match ul li .nick {
+    display: inline-block;
+}
+#match-com .stars-match ul li .score {
+    width: 85%;
+    padding-left: 7px;
+    display: inline-block;
+    padding-top: 7px;
+}
+
+.listin-and-starts {
+    overflow: hidden;
+}
+
+/*Кто играл в коммандах*/
+.who-plays {
+    overflow: hidden;
+    border-top: 1px dotted #C4C4C4;
+    font-size: 9px;
+}
+.who-plays h3 {
+    padding: 7px 0 0 2%;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.who-plays .stream-author {
+    text-decoration: none;
+    font-weight: bold;
+}
+/*
+.who-plays .fio {
+    display: none;
+}
+*/
+.who-plays table {
+    margin-top: 0;
+    text-align: left;
+}
+.who-plays table thead {
+    background: transparent;
+    color: black;
+}
+.who-plays table thead th {}
+
+.who-plays .away_stat {
+    background: #FDFDFD;
+    margin: 3px 0 0 1%;
+    padding: 5px 9px;
+    border-radius: 5px;
+    width: 46%;
+    float: left;
+}
+.who-plays .home_stat {
+    background: #FDFDFD;
+    margin: 3px 1% 0 0;
+    padding: 5px 9px;
+    border-radius: 5px;
+    width: 46%;
+    float: right;
+}
+
+/*Последнее слово*/
+.users-says {}
+.users-says h3 {
+    padding: 10px 0 0 2%;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+.users-says .stream-list {
+    margin-top: 0;
+}
+.users-says .stream-list .stream-item-type-match_played {
+    margin-top: 0;
+}
+/*end templates/actionVs/tournament_match_comment.tpl*/
+
+.stream-list {
+    margin-top: 15px;
+}
+.stream-list .stream-item-type-match_played {
+    background: #FDFDFD;
+    margin: 10px 10px 0 10px;
+    padding: 5px 9px;
+    border-radius: 5px;
+}
+.stream-list .stream-item-type-match_played .date {
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.stream-list .stream-item-type-match_played #myTable tr:last-child {
+    font-size: 10px;
+}
+
+.stream-list .stream-item-type-match_played #myTable tr:last-child td:first-child {
+    border-right: 1px dotted #C4C4C4;
+    padding-right: 10px;
+}
+.stream-list .stream-item-type-match_played #myTable tr:last-child td:last-child {
+    padding-left: 10px;
+}
+
+.js-block-stream-content,
+.vidget,
+.vidget .m,
+.block .block-content .stats
+{
+    padding: 0 !important;
+}
+
+.vidget .m table {
+    width: 100%; /*255px;*/	
+}
+.vidget .m table thead {
+    background: #686868;
+    color: white;
+}
+/*.vidget .m table tbody tr td:nth-child(4),
+.vidget .m table tbody tr td:nth-child(5)
+{
+    padding: 0 7px;
+    font-size: 10px;
+}
+*/
+.vidget .m table tbody tr td:nth-child(3)
+{
+    font-size: 11px;
+}
+
+.vidget .m table tbody tr td:nth-child(2) img {
+    position: relative;
+    top: 2px;
+}
+
+.vidget .m table tbody tr.odd {
+    background: #F4F4F4;
+}
+
+
+.vidget .m table.calendar { background-color:white;}
+
+.vidget .m table.calendar thead {}
+.vidget .m table.calendar thead th {}
+.vidget .m table.calendar thead th a {
+    color: #fff;
+    cursor: pointer;
+}
+.vidget .m table.calendar thead th a.left {
+    float: left;
+    margin: 2px 0 0 5px;
+}
+.vidget .m table.calendar thead th a.right {
+    float: right;
+    margin: 2px 5px 0 0;
+}
+.vidget .m table.calendar thead th span {
+    display: block;
+    padding: 3px 10px 3px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.vidget .m table.calendar span.raspisanie_score {
+    font-size: 7px !important;
+    font-family: verdana;
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+}
+
+.vidget .m table.calendar tr {}
+.vidget .m table.calendar tr td {}
+.vidget .m table.calendar tr td a {
+    text-decoration: none;
+    display: block;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 14px 1px;
+    padding: 0 0 0 2px;
+    font-size: 9px;
+}
+
+.vidget .m table.calendar tr td.calendar-day-head {
+    background: #F4F4F4;
+    color: black;
+    font-size: 11px!important;
+    padding: 0 1px!important;
+    text-align: center;
+    font-weight: bold;
+}
+.vidget .m table.calendar tr td.calendar-day-np,
+.vidget .m table.calendar tr td.calendar-day,
+.vidget .m table.calendar tr td.calendar-day-home,
+.vidget .m table.calendar tr td.calendar-day-away
+{
+    padding: 0 !important;
+    font-size: 11px!important;
+    text-align: left;
+
+    width: 44px;
+    height: 39px;
+    vertical-align: top;
+    border-right: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+
+}
+
+
+.vidget .m table.calendar tr td div.day-number {
+    padding: 0 !important;
+    background: transparent !important;
+    position: relative;
+    height: 38px;
+}
+
+.calendar-legend {
+    font-size: 11px;
+    color: #355;
+    line-height: 19px;
+    font-weight: bold;
+    width: 100%;
+    margin: 3px 0px 0px;
+}
+.calendar-legend td {
+    padding: 0!important;
+}
+
+.calendar-legend .label {
+    position: relative;
+    top: -3px;
+    left: -6px;
+}
+
+
+.homeGradient {
+    background: #CFE262 !important;
+    padding: 0 !important;
+    width: 17px;
+    height: 12px;
+    border-radius: 2px;
+}
+.awayGradient {
+    background: #FFDBBC !important;
+    padding: 0 !important;
+    width: 17px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+td.calendar-day-home {
+    background: #CFE262;
+}
+td.calendar-day-away {
+    background: #FFDBBC;
+}
+.width_auto{width:auto !important;}
+.td_team_center{width:100%;}
+
+
+a.stream-author {
+    color: #686868;
+    font-weight: bold;
+    text-decoration: none;
+}
+.fio {
+    color: #AAAAAA;
+}
+.period {
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+.goals {
+    color: #75A13F;
+    font-weight: bold;
+}
+.onegoal {
+    margin-bottom: 3px;
+    margin-top: 7px;
+}
+.goaltime {
+    font-size: 10px;
+    padding-left: 13px;
+}
+.my {
+    background: none repeat scroll 0 0 #FFFFFF;
+}

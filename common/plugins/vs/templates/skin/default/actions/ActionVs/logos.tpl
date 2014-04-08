@@ -1,0 +1,1 @@
+{foreach from=$aLogos item=oLogo name=el2}<option value='{$oLogo.logo}'>{$oLogo.logo}</option>{/foreach}</select>

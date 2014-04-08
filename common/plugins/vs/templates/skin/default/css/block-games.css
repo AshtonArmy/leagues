@@ -1,0 +1,356 @@
+#top_block_tour {
+    font-size: 12px;
+    font-family: arial;
+    padding: 10px 10px 15px;
+    position: relative;
+    background: #575F66 url("../images/line.png") repeat-x bottom;
+}
+
+#top_block_tour div.user_tours {
+    background: url("../images/bg_1_right.png") no-repeat right;
+    margin: 0 0 15px 0;
+}
+#top_block_tour div.user_tours .wrap {
+    background: url("../images/bg_1_left.png") no-repeat left;
+    height: 50px;
+}
+
+#top_block_tour ul {
+    overflow: hidden;
+}
+#top_block_tour ul li.title {
+    float: left;
+    color: #577cd2;
+    font-weight: bold;
+    padding: 16px 35px 0 26px;
+}
+#top_block_tour ul li.panel_bar {
+    float: left;
+    padding: 14px 0 0 0;
+}
+
+#top_block_tour ul li.panel_bar ul.pagi {}
+#top_block_tour ul li.panel_bar ul.pagi li {
+    float: left;
+}
+
+#top_block_tour ul li.panel_bar ul.pagi li.prev {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    padding: 0 25px 0 0;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.prev a {
+    background: url("../images/prev_link.png") no-repeat;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.prev a:active {
+    background: url("../images/prev_link_ac.png") no-repeat 0 1px;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.prev a.hide {
+    display: none;
+}
+
+#top_block_tour ul li.panel_bar ul.pagi li.next {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    padding: 0 0 0 25px;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.next a {
+    background: url("../images/next_link.png") no-repeat;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.next a:active {
+    background: url("../images/next_link_ac.png") no-repeat 0 1px;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.next a.hide {
+    display: none;
+}
+
+#top_block_tour ul li.panel_bar ul.pagi li.tour_link {
+    padding: 1px 0;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.tour_link a {
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 10px;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.tour_link a:last-child {
+    padding: 0 0 0 10px;
+}
+#top_block_tour ul li.panel_bar ul.pagi li.tour_link a:first-child {
+    padding: 0 10px 0 0;
+}
+
+
+#top_block_tour div.bar_games {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -3px #000;
+    position: relative;
+}
+#top_block_tour div.bar_games .wrap {
+}
+
+#top_block_tour div.bar_games ul.pagi {}
+
+#top_block_tour div.bar_games ul.pagi li.prev {}
+#top_block_tour div.bar_games ul.pagi li.prev a {}
+#top_block_tour div.bar_games ul.pagi li.next {}
+#top_block_tour div.bar_games ul.pagi li.next a {}
+
+#top_block_tour div.bar_games ul.pagi li.game_link {
+    line-height: 57px;
+    margin: 0px 0px;
+    overflow: hidden;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin: 0 26px;
+    opacity: 0.5;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a:hover {
+    opacity: 1;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a.select {
+    opacity: 1;
+}
+
+#top_block_tour div.bar_games ul.pagi li.game_link a#fifa12 {
+    background-image: url("../images/fifa12.png");
+    height: 21px;
+    width: 83px;
+    background-position: 0 -4px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#nhl13 {
+    background-image: url("../images/nhl13.png");
+    height: 30px;
+    width: 86px;
+    background-position: 0 0px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#fifa13 {
+    background-image: url("../images/fifa13.png");
+    height: 24px;
+    width: 80px;
+    background-position: 0 0px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#nhl12 {
+    background-image: url("../images/nhl12.png");
+    height: 21px;
+    width: 86px;
+    background-position: 0 -4px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#gt5 {
+    background-image: url("../images/gt5.png");
+    height: 30px;
+    width: 96px;
+    background-position: 0 -1px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#nba2k11 {
+    background-image: url("../images/nba2k11.png");
+    height: 21px;
+    width: 102px;
+    background-position: 0 -4px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#nba2k12 {
+    background-image: url("../images/nba2k12.png");
+    height: 21px;
+    width: 108px;
+    background-position: 0 -4px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#nfl13 {
+    background-image: url("../images/nfl13.png");
+    height: 23px;
+    width: 108px;
+    background-position: 0 -4px;
+}
+#top_block_tour div.bar_games ul.pagi li.game_link a#f1_2011 {
+    background: url("../images/f1_2011.png") ;
+    height: 30px;
+    width: 66px;
+    background-position: 0 0px;
+}
+
+
+
+
+#top_block_tour div.list_tours {
+    margin: 0;
+}
+#top_block_tour div.list_tours .wrap {
+    height: 184px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px -3px #000;
+    margin-top: -4px;
+}
+
+#top_block_tour div.list_tours ul.list {
+    overflow: hidden;
+}
+#top_block_tour div.list_tours ul.list li.colum {
+    float: left;
+    width: 20%;
+    border-right: 1px solid #E5E5E5;
+    height: 172px;
+    margin: 6px 0;
+}
+
+#top_block_tour div.list_tours ul.list li.colum.past h5 {
+    color: #b6b6b6;
+    background: url("../images/ico_3.png") no-repeat left top;
+}
+#top_block_tour div.list_tours ul.list li.colum.real h5 {
+    color: #dd5d5d;
+    background: url("../images/ico_2.png") no-repeat left top;
+}
+#top_block_tour div.list_tours ul.list li.colum.future h5 {
+    color: #3fa1bc;
+    background: url("../images/ico_1.png") no-repeat left top;
+}
+
+#top_block_tour div.list_tours ul.list li.colum .wraps {
+    padding: 0 10px 0 25px;
+    line-height: 25px;
+}
+#top_block_tour div.list_tours ul.list li.colum h5 {
+    font-weight: bold;
+    font-family: arial;
+    font-size: 14px;
+    margin: 9px 0;
+    padding: 0 0 0 27px;
+}
+
+#top_block_tour div.list_tours ul.list li.colum .lists {
+    overflow-y: auto;
+    height: 125px;
+}
+
+#top_block_tour div.list_tours ul.list li.colum a {
+    font-size: 13px;
+    display: block;
+    color: #000;
+}
+#top_block_tour div.list_tours ul.list li.colum a.select {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#top_block_tour div.list_tours ul.list li.block {
+    float: right;
+    width: 39%;
+}
+#top_block_tour div.list_tours ul.list li.block .wraps {
+    padding: 12px 10px 5px 5px;
+}
+
+#top_block_tour div.list_tours ul.list li.block ul.info {
+    overflow: hidden;
+    padding: 0 0 3px 0;
+}
+
+#top_block_tour div.list_tours ul.list li.block ul.info li.logo {
+    float: left;
+    width: 39%;
+    text-align: center;
+    box-sizing: border-box;
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.logo img {
+    width: 100%;
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.logo h4 {
+    margin: 0 12px 0 0;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #75A13F;
+}
+
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info {
+    float: right;
+    width: 57%;
+    margin-right: 1%;
+    font-size: 13px;
+    height: 155px;
+    overflow: hidden;
+
+    background: #ebebeb;
+
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+
+    border: 1px solid #ebebeb;
+
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 2px 0px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 2px 0px rgba(255,255,255,0.7);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 2px 0px rgba(255,255,255,0.7);
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info .box {
+    padding: 12px 9px 6px;
+}
+
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-1 {
+    padding: 0;
+    color: #7D7D7D;
+    margin: 0 0 10px 0;
+    line-height: 21px;
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-1 li {}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-1 li strong {
+    color: #000;
+}
+
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-2 {
+    padding: 0;
+    line-height: 19px;
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-2 li.titles {
+    color: #dd5f5f;
+    font-weight: bold;
+}
+
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-2 li.match {
+    font-size: 11px;
+    margin: 3px 0;
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-2 li.match span {}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-2 li.match span.command-1 {
+    display: inline-block;
+    width: 42%;
+    overflow: hidden;
+    height: 20px;
+    float: left;
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-2 li.match span.command-2 {
+    display: inline-block;
+    width: 42%;
+    overflow: hidden;
+    height: 20px;
+    float: right;
+}
+#top_block_tour div.list_tours ul.list li.block ul.info li.text-info ul.list-2 li.match span.score {
+    font-weight: bold;
+    margin: 0 5px;
+}

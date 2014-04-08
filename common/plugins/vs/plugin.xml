@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>
+		<lang name="default">VirtualSports</lang>
+		<lang name="russian">VirtualSports</lang>
+	</name>
+	<author>
+		<lang name="default">Klaus</lang>
+		<lang name="russian">Klaus</lang>
+	</author>
+	<homepage>http://virtualsports.ru</homepage>
+	<version>0.0.1</version>
+	<requires>
+		<livestreet>0.4.2</livestreet>
+		<plugins>
+		</plugins>
+	</requires>
+	<description>
+		<lang name="default">Админка для управления турнирами</lang>
+		<lang name="russian">Админка для управления турнирами</lang>
+	</description>
+</plugin>
