@@ -1,4 +1,3 @@
-leagues
-=======
+Leagues on altocms
 
-leagues on altocms
+Plugins of virtualsports.ru and consolehockey.com

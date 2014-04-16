@@ -9,9 +9,9 @@ class PluginVs_HookVs extends Hook {
 	
 	public function RegisterHook() {
 		 
-	//	$this->AddHook('template_profile_whois_item', 'ProfileTournamentInfo', __CLASS__,1); 
+		$this->AddHook('template_profile_whois_item', 'ProfileTournamentInfo', __CLASS__,102); 
 	//	$this->AddHook('template_topic_show_before', 'BeforeTopic', __CLASS__,1); 
-	//	$this->AddHook('template_profile_whois_item', 'ProfileMedalsInfo', __CLASS__,1); 
+		$this->AddHook('template_profile_whois_item_medals', 'ProfileMedalsInfo', __CLASS__,101); 
 	//	$this->AddHook('template_second_menu', 'SecondMenu', __CLASS__,1); 
 	//	$this->AddHook('template_turnir_menu', 'TurnirMenu', __CLASS__,1); 
 	//	$this->AddHook('template_spisok_turnirov', 'SpisokTurnirov', __CLASS__,1); 
@@ -514,7 +514,24 @@ class PluginVs_HookVs extends Hook {
 	
 	}
 	public function ProfileTournamentInfo($aVars) { 
-			$sql="SELECT DISTINCT sp.psnid as psnid,
+		if($Playerstat = LS::E()->PluginVs_Stat_GetPlayerstatItemsByFilter(array(
+				'user_id' => $aVars['oUserProfile']->getId(),
+				'tournament_id <>' => 0,				
+				'gametype_id <>' => 3, 
+				'#where' => array('game_id not in (10,11)' => array()),	
+				'#with'         => array('team','tournament', 'game', 'gametype'),
+				'#order' =>array('game_id'=>'desc','tournament_id'=>'desc','round_id'=>'asc') 
+			))){
+			// $oViewer=$this->Viewer_GetLocalViewer();	
+			// $oViewer->Assign('Playerstat',$Playerstat); 
+			// $sTextResult=$oViewer->Fetch("block.playerstat_table.tpl");
+			// $this->Viewer_Assign('sTextResult',$sTextResult);
+
+			$this->Viewer_Assign('Playerstat', $Playerstat);
+            return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__).'profile_tournament_info.tpl');
+		}
+		
+		/*$sql="SELECT DISTINCT sp.psnid as psnid,
 				sp.rating as rating,
 				g.name game,
 				upper(p.brief) as platform, 
@@ -538,7 +555,7 @@ class PluginVs_HookVs extends Hook {
 			$aGameTournament=$this->PluginVs_Stat_GetAll($sql);
 			$this->Viewer_Assign('aGameTournament', $aGameTournament);
             return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__).'profile_tournament_info.tpl');
-			
+			*/
         }
 	public function ProfileMedalsInfo($aVars) {
 	

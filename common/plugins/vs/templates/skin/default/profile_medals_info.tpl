@@ -1,6 +1,12 @@
 {if $aMedals}
-<h2 class="header-table">Медали</h2>
-<ul class="medal-list-avatar">
+<div class="span6">
+	<div class="widget-box transparent">
+		<div class="widget-header-small">
+			<h4 class="header-table">Медали</h4>
+		</div>
+		<div class="widget-body">
+			<div class="widget-main">
+<ul class="medal-list-avatar user-list-avatar">
 		{foreach from=$aMedals item=oMedal} 
 			{assign var="oTournament" value=$oMedal->getTournament()} 
 			{assign var="oGame" value=$oMedal->getGame()} 
@@ -10,4 +16,8 @@
 			</li>
 		{/foreach}
 	</ul>
+			</div>
+		</div>
+	</div>
+</div>
 {/if}

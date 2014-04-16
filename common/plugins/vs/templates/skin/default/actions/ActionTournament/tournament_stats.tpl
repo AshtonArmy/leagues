@@ -4,7 +4,7 @@
 
 <table width="100%" cellspacing="0" class="table table-striped table-bordered table-hover" id="allteams">
 <thead>
-<tr> 
+<tr>		
 	<th class="cside" align="center">№</th>	
 	<th class="cside" align="center"></th>
 	<th class="cside">Team</th>
