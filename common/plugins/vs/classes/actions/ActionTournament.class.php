@@ -2004,6 +2004,7 @@ if($oGame->getSportId()==4)
 					}
 					$Tag='';
 					if($what_identifier=='ps3')$Tag='PSN ID';
+					if($what_identifier=='ps4')$Tag='PSN ID';
 					if($what_identifier=='xbox')$Tag='GameTag';
 					if($what_identifier=='EA')$Tag='EA';
 					$this->Viewer_Assign('Tag',$Tag);
@@ -2147,6 +2148,8 @@ if($oGame->getSportId()==4)
 			$oPlatform = $this->PluginVs_Stat_GetPlatformByPlatformId($this->oGame->getPlatformId());
 			if ($oPlatform->getBrief() == 'ps3')
 				$platforms = 'ps3';
+			if ($oPlatform->getBrief() == 'ps4')
+				$platforms = 'ps4';
 			if ($oPlatform->getBrief() == 'xbox')
 				$platforms = 'xbox';
 			if ($oPlatform->getBrief() == 'pc')
@@ -2155,6 +2158,8 @@ if($oGame->getSportId()==4)
 			
 			$Tag = '';
 			if ($platforms == 'ps3')
+				$Tag = 'PSN ID';
+			if ($platforms == 'ps4')
 				$Tag = 'PSN ID';
 			if ($platforms == 'xbox')
 				$Tag = 'GameTag';
